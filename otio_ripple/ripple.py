@@ -2,7 +2,7 @@ import opentimelineio as otio
 
 EDIT_RATE = 24
 HOUR = 3600 * EDIT_RATE
-timeline = otio.adapters.read_from_file("sample_data/TOA_s002-006_ONLINE_102720.edl")
+timeline = otio.adapters.read_from_file("sample_data/sample.edl")
 for clip in timeline.each_clip():
     ripple = -HOUR + 100
 
